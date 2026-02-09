@@ -136,6 +136,10 @@ Evaluated on **DLPFC** and **Human Breast Cancer** datasets.
 bash ./evaluations/spatial_clustering/run_finetune_dlpfc.sh
 bash ./evaluations/spatial_clustering/run_finetune_hbc.sh
 
+# Extract fusion embeddings
+bash ./evaluations/spatial_clustering/run_get_fusion_embeddings_dlpfc.sh
+bash ./evaluations/spatial_clustering/run_get_fusion_embeddings_hbc.sh
+
 # Clustering with STAIG module
 python ./evaluations/spatial_clustering/train_st_conma.py \
     --dataset dlpfc --all \
