@@ -32,7 +32,7 @@ sys.path.append("./utils")
 from pt_load_inference import VisionInference
 
 # Model configuration
-VISION_MODEL_NAME = "pathoduet"  # Options: 'pathoduet', 'phikon', 'uni2_h'
+VISION_MODEL_NAME = "pathoduet" 
 LOSS_TYPE = "clip"
 NUM_EPOCHS = 12
 CHECKPOINT_PATH = f"./checkpoints/st_conma_pythia410m_12layers_3aug_clip/checkpoint_epoch_12.pt"
@@ -518,3 +518,4 @@ with open(f"{BASE_PATH}/luad_clustering_results.json", "w") as f:
     json.dump(results, f, indent=4)
 
 print("LUAD clustering evaluation results saved.")
+
