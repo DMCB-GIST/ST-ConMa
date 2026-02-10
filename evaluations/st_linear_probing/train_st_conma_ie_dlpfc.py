@@ -86,7 +86,7 @@ CHECKPOINT_PATH = "./checkpoints/st_conma_pythia410m_12layers_3aug_clip/checkpoi
 
 # Model config
 VISION_MODEL_NAME = "pathoduet"
-DEVICE = "cuda:3"
+DEVICE = "cuda:0"
 
 # Training config
 BATCH_SIZE = 32
