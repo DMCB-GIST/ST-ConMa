@@ -94,7 +94,7 @@ VISION_MODEL_NAME = "pathoduet"
 GENE_MODEL_NAME = "pythia_410m"
 NUM_LAYERS = 12
 MAX_LENGTH = 512
-DEVICE = "cuda:2"
+DEVICE = "cuda:0"
 
 # Training config
 BATCH_SIZE = 32
