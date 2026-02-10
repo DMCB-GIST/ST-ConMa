@@ -45,6 +45,7 @@
 
 ## Project Structure
 
+```
 ST_ConMa_git/
 ├── train_multitask.py              # Main multi-task training script
 ├── run_train_multitask.sh          # Distributed training launcher
@@ -93,6 +94,7 @@ ST_ConMa_git/
 │
 ├── checkpoints/                    # Saved model weights
 ├── results/                        # Evaluation results
+```
 
 ## Environment Setup
 
