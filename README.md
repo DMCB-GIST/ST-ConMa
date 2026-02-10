@@ -43,6 +43,57 @@
 
 ---
 
+## Project Structure
+
+ST_ConMa_git/
+├── train_multitask.py              # Main multi-task training script
+├── run_train_multitask.sh          # Distributed training launcher
+│
+├── PathoDuet/                      # Vision foundation model
+│   ├── main_moco.py                # MoCo v3 pre-training
+│   ├── main_bridge.py              # Cross-scale positioning task
+│   ├── main_cross.py               # Cross-stain transferring task
+│   ├── vits.py                     # ViT implementations with pretext tokens
+│   └── moco/                       # MoCo framework utilities        
+│
+├── utils/                          # Core training utilities
+│   ├── multimodal.py               # ST_AlignmentModel & Trainer
+│   ├── loss.py                     # CLIPLoss, SigLIPLoss, SimCLRLoss
+│   ├── dataset_load.py             # Data loading pipelines
+│   ├── augmentations.py            # Image augmentation strategies
+│   ├── model.py                    # Model initialization
+│   ├── optimizer.py                # Optimization configuration
+│   ├── scheduler.py                # LR scheduling
+│   ├── gather.py                   # Distributed training utilities
+│   └── pt_load_inference.py        # Inference pipeline
+│
+├── pt_dataset/                     # Pre-training datasets
+│   ├── st_images/                  # ST image patches
+│   ├── st_sentences/               # Gene expression sequences
+│   └── hest_data/                  # HEST-1k dataset
+│
+├── ft_dataset/                     # Fine-tuning datasets
+│   ├── gep_pred/                   # Gene expression prediction
+│   ├── spatial_clustering/         # Spatial clustering (DLPFC)
+│   └── linear_probing/             # Linear probing benchmarks
+│
+├── evaluations/                    # Evaluation scripts
+│   ├── gep_pred/                   # Gene expression prediction
+│   │   ├── eval_st_conma_zeroshot.py
+│   │   ├── train_st_conma.py
+│   │   └── run_st_conma_*.sh
+│   ├── linear_probing/             # Linear probing tasks
+│   │   ├── cam17.py
+│   │   ├── crcnorm.py
+│   │   ├── luad.py
+│   │   └── mhist.py
+│   ├── spatial_clustering/         # Spatial domain identification
+│   ├── st_linear_probing/          # ST-specific linear probing
+│   └── cluster_plot/               # Visualization utilities
+│
+├── checkpoints/                    # Saved model weights
+├── results/                        # Evaluation results
+
 ## Environment Setup
 
 Two conda environments are required:
