@@ -93,7 +93,7 @@ CHECKPOINT_PATH = None
 GENE_MODEL_NAME = "pythia_410m"
 NUM_LAYERS = 12
 MAX_LENGTH = 512
-DEVICE = "cuda:1"
+DEVICE = "cuda:0"
 
 # Training config
 BATCH_SIZE = 32
