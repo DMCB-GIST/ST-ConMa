@@ -97,7 +97,7 @@ GENE_DIM = 1024
 PROJ_DIM = 768
 MAX_SEQ_LEN = 512
 NUM_LAYERS = 12
-DEVICE = "cuda:3"
+DEVICE = "cuda:0"
 
 # Training config
 BATCH_SIZE = 32
