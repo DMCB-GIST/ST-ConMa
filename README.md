@@ -97,7 +97,7 @@ pip install --no-deps --extra-index-url https://download.pytorch.org/whl/cu124 -
 # For spatial clustering with STAIG module
 conda env create -f st_conma_clustering_env.yml
 conda activate st_conma_clustering
-pip install --no-deps --extra-index-url https://data.pyg.org/whl/torch-2.2.0+cu121.html -r st_conma_clustering_pip.txt
+pip install --no-deps --f https://data.pyg.org/whl/torch-2.2.0+cu121.html -r st_conma_clustering_pip.txt
 ```
 
 ---
