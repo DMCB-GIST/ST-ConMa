@@ -2,7 +2,7 @@
 
 ![Overview](main_figure/Overview_figure.png)
 
-## Table of Contents
+## 📋 Table of Contents
 - [Datasets for downstream tasks](#datasets-for-downstream-tasks)
 - [Encoders for ST-ConMa](#encoders-for-st-conma)
 - [Environment Setup](#environment-setup)
@@ -18,7 +18,7 @@
 
 ---
 
-## Datasets for downstream tasks
+## 💽 Datasets for downstream tasks
 
 - **Camelyon17-WILDS**: [https://huggingface.co/datasets/wltjr1007/Camelyon17-WILDS]
 - **NCT-CRC-HE-100K**: [https://zenodo.org/records/1214456]
@@ -43,7 +43,7 @@
 
 ---
 
-## Project Structure
+## 🗂️ Project Structure
 
 ```
 ST_ConMa_git/
@@ -95,7 +95,7 @@ ST_ConMa_git/
 └── results/                        # Evaluation results
 ```
 
-## Environment Setup
+## 🌏 Environment Setup
 
 Two conda environments are required:
 
@@ -118,7 +118,7 @@ pip install --no-deps --extra-index-url https://data.pyg.org/whl/torch-2.2.0+cu1
 
 ---
 
-## Dataset Preparation
+## 🚀 Dataset Preparation
 
 ### 1. Download HEST-1K Dataset
 
