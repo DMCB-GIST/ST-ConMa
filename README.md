@@ -50,33 +50,32 @@ ST_ConMa_git/
 ├── train_multitask.py              # Main multi-task training script
 ├── run_train_multitask.sh          # Distributed training launcher
 │
-├── PathoDuet/                      # Vision foundation model
-│   ├── main_moco.py                # MoCo v3 pre-training
-│   ├── main_bridge.py              # Cross-scale positioning task
-│   ├── main_cross.py               # Cross-stain transferring task
-│   ├── vits.py                     # ViT implementations with pretext tokens
-│   └── moco/                       # MoCo framework utilities        
+├── PathoDuet/
+│   ├── checkpoint/
+│       ├── checkpoint_HE.pth                    
 │
 ├── utils/                          # Core training utilities
 │   ├── multimodal.py               # ST_AlignmentModel & Trainer
-│   ├── loss.py                     # CLIPLoss, SigLIPLoss, SimCLRLoss
-│   ├── dataset_load.py             # Data loading pipelines
-│   ├── augmentations.py            # Image augmentation strategies
-│   ├── model.py                    # Model initialization
-│   ├── optimizer.py                # Optimization configuration
-│   ├── scheduler.py                # LR scheduling
-│   ├── gather.py                   # Distributed training utilities
-│   └── pt_load_inference.py        # Inference pipeline
+│   ├── loss.py                     
+│   ├── dataset_load.py           
+│   ├── augmentations.py           
+│   ├── model.py                   
+│   ├── optimizer.py                
+│   ├── scheduler.py               
+│   ├── gather.py                   
+│   └── pt_load_inference.py        
 │
 ├── pt_dataset/                     # Pre-training datasets
-│   ├── st_images/                  # ST image patches
-│   ├── st_sentences/               # Gene expression sequences
-│   └── hest_data/                  # HEST-1k dataset
+│   ├── st_images/                  # ST tissue images
+│   └── st_sentences/               # Gene sentences
 │
 ├── ft_dataset/                     # Fine-tuning datasets
 │   ├── gep_pred/                   # Gene expression prediction
 │   ├── spatial_clustering/         # Spatial clustering (DLPFC)
 │   └── linear_probing/             # Linear probing benchmarks
+│       ├── crc
+│       ├── mhist
+│       └── luad
 │
 ├── evaluations/                    # Evaluation scripts
 │   ├── gep_pred/                   # Gene expression prediction
@@ -93,7 +92,7 @@ ST_ConMa_git/
 │   └── cluster_plot/               # Visualization utilities
 │
 ├── checkpoints/                    # Saved model weights
-├── results/                        # Evaluation results
+└── results/                        # Evaluation results
 ```
 
 ## Environment Setup
