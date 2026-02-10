@@ -2,22 +2,6 @@
 
 ![Overview](main_figure/Overview_figure.png)
 
-## 📋 Table of Contents
-- [Datasets for downstream tasks](#datasets-for-downstream-tasks)
-- [Encoders for ST-ConMa](#encoders-for-st-conma)
-- [Environment Setup](#environment-setup)
-- [Dataset Preparation](#dataset-preparation)
-- [Pre-training](#pre-training)
-- [Evaluation](#evaluation)
-  - [K-means Clustering](#k-means-clustering-on-histopathology-benchmarks)
-  - [Linear Probing (Histopathology)](#linear-probing-on-histopathology-benchmarks)
-  - [Gene Expression Prediction](#gene-expression-prediction)
-  - [Linear Probing (DLPFC)](#linear-probing-on-dlpfc-dataset)
-  - [Spatial Clustering](#spatial-clustering)
-  - [Human Breast Cancer Analysis](#human-breast-cancer-analysis)
-
----
-
 ## 💽 Datasets for downstream tasks
 
 - **Camelyon17-WILDS**: [https://huggingface.co/datasets/wltjr1007/Camelyon17-WILDS]
