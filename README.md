@@ -50,12 +50,18 @@ Two conda environments are required:
 ```bash
 # For dataset download and preprocessing
 conda env create -f hest_env.yml
+conda activate hest
+pip install --no-deps -r hest_pip.txt
 
 # For gene expression prediction and spatial clustering fine-tuning 
 conda env create -f st_conma_env.yml
+conda activate st_conma
+pip install --no-deps --extra-index-url https://download.pytorch.org/whl/cu124 -r st_conma_pip.txt
 
 # For spatial clustering with STAIG module
 conda env create -f st_conma_clustering_env.yml
+conda activate st_conma_clustering
+pip install --no-deps --extra-index-url https://data.pyg.org/whl/torch-2.2.0+cu121.html -r st_conma_clustering_pip.txt
 ```
 
 ---
