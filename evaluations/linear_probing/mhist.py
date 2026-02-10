@@ -27,7 +27,7 @@ from pt_load_inference import VisionInference
 VISION_MODEL_NAME = "pathoduet"  # Options: 'pathoduet', 'phikon', 'uni2_h'
 CHECKPOINT_PATH = "./checkpoints/st_conma_pythia410m_12layers_3aug_clip/checkpoint_epoch_12.pt"
 
-MODEL_NAME = "ST_ConMa_text"
+MODEL_NAME = "ST_ConMa"
 BASE_DIR = "./results/linear_probing/mhist/st_conma/"
 BASE_PATH = f"{BASE_DIR}"
 SEEDS = [42, 123, 456, 789, 101]
@@ -568,4 +568,5 @@ def main():
     print(f"K-fold splits for all seeds saved to {splits_dir}")
 
 if __name__ == "__main__":
+
     main()
