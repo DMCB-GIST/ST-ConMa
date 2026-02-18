@@ -27,6 +27,12 @@
 
 ---
 
+## 💽 Pre-processed training datasets, checkpoint and result files
+
+- **Drive**: [https://drive.google.com/drive/folders/1l7pVZ504gm9OywC1WyznrRjfFpY7yxSF?usp=sharing]
+
+---
+
 ## 🗂️ Project Structure
 
 ```
