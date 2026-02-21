@@ -85,7 +85,7 @@ LABEL_NAMES = list(LABEL_MAP.keys())
 
 # Paths
 GENE_CSV_PATH = "./pt_dataset/st_sentences/top100_sentences.csv"
-ANNOTATION_DIR = "./ft_dataset/DLPFC/DLPFC_annotations"
+ANNOTATION_DIR = "./ft_dataset/spatial_clustering/DLPFC/DLPFC_annotations"
 CHECKPOINT_PATH = "./checkpoints/st_conma_pythia410m_12layers_3aug_clip/checkpoint_epoch_12.pt"
 
 # Model config
@@ -666,8 +666,6 @@ def main():
             checkpoint_path=CHECKPOINT_PATH,
             model_name=GENE_MODEL_NAME,
             device=DEVICE,
-            use_lora=False,
-            use_qlora=False,
             max_length=MAX_LENGTH,
             num_layers=NUM_LAYERS,
             random_init=False
