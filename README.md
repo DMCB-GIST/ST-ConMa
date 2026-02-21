@@ -116,11 +116,13 @@ pip install --no-deps -f https://data.pyg.org/whl/torch-2.2.0+cu121.html -r st_c
 conda activate hest
 python ./pt_dataset/st_download.py
 python ./pt_dataset/patches_download.py
+
+conda activate st_conma
 python ./extract_patches.py
 ```
 
 ### 2. Preprocessing
-
+conda activate st_conma
 Run all cells in `./pt_dataset/profiling_and_preprocessing.ipynb`.
 
 ---
@@ -141,12 +143,14 @@ bash run_train_multitask.sh
 ### K-means Clustering on Histopathology Benchmarks
 
 ```bash
+conda activate st_conma
 python ./evaluations/cluster_plot/cluster_plot_st_conma.py
 ```
 
 ### Linear Probing on Histopathology Benchmarks
 
 ```bash
+conda activate st_conma
 python ./evaluations/linear_probing/cam17.py
 python ./evaluations/linear_probing/crcnorm.py
 python ./evaluations/linear_probing/luad.py
@@ -158,6 +162,7 @@ python ./evaluations/linear_probing/mhist.py
 Evaluated on **HER2ST**, **cSCC**, and **HLT** datasets.
 
 ```bash
+conda activate st_conma
 bash ./evaluations/gep_pred/run_st_conma_igc_igm.sh
 bash ./evaluations/gep_pred/run_st_conma_zeroshot.sh
 ```
@@ -170,6 +175,7 @@ For visualization, run all cells in:
 ### Linear Probing on DLPFC Dataset
 
 ```bash
+conda activate st_conma
 python ./evaluations/st_linear_probing/train_st_conma_ie_dlpfc.py
 python ./evaluations/st_linear_probing/train_st_conma_ge_dlpfc.py
 python ./evaluations/st_linear_probing/train_st_conma_fe_dlpfc.py
@@ -181,6 +187,7 @@ Evaluated on **DLPFC** and **Human Breast Cancer** datasets.
 
 ```bash
 # Fine-tuning
+conda activate st_conma
 bash ./evaluations/spatial_clustering/run_finetune_dlpfc.sh
 bash ./evaluations/spatial_clustering/run_finetune_hbc.sh
 
@@ -189,6 +196,7 @@ bash ./evaluations/spatial_clustering/run_get_fusion_embeddings_dlpfc.sh
 bash ./evaluations/spatial_clustering/run_get_fusion_embeddings_hbc.sh
 
 # Clustering with STAIG module
+conda activate st_conma_clustering
 python ./evaluations/spatial_clustering/train_st_conma.py \
     --dataset dlpfc --all \
     --output_dir ./results/spatial_clustering/st_conma/dlpfc
@@ -199,5 +207,5 @@ python ./evaluations/spatial_clustering/train_st_conma.py \
 ```
 
 ### Human Breast Cancer Analysis
-
+conda activate st_conma
 Run all cells in `./evaluations/spatial_clustering/spatial_clustering.ipynb`.
