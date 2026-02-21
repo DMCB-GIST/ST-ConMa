@@ -90,12 +90,6 @@ ST_ConMa_git/
 Two conda environments are required:
 
 ```bash
-# For dataset download and preprocessing
-conda env create -f hest_env.yml
-conda activate hest
-pip install --no-deps -r hest_pip.txt
-
-# For gene expression prediction and spatial clustering fine-tuning 
 conda env create -f st_conma_env.yml
 conda activate st_conma
 pip install --no-deps --extra-index-url https://download.pytorch.org/whl/cu124 -r st_conma_pip.txt
