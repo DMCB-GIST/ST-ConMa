@@ -12,7 +12,7 @@ OUTPUT_DIR="./results/spatial_clustering/st_conma/dlpfc/checkpoints"
 
 # Training settings
 BATCH_SIZE=32
-EPOCHS=1
+EPOCHS=6
 LR=1e-5
 WEIGHT_DECAY=0.01
 SEED=42
@@ -56,7 +56,7 @@ python ./evaluations/spatial_clustering/finetune.py \
     --epochs $EPOCHS \
     --lr $LR \
     --weight_decay $WEIGHT_DECAY \
-    --device cuda:1 \
+    --device cuda:0 \
     --num_workers 8 \
     --use_mixed_precision \
     --seed $SEED \
