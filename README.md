@@ -207,5 +207,4 @@ python ./evaluations/spatial_clustering/train_st_conma.py \
 ```
 
 ### Human Breast Cancer Analysis
-conda activate st_conma
-Run all cells in `./evaluations/spatial_clustering/spatial_clustering.ipynb`.
+conda activate st_conma and run all cells in `./evaluations/spatial_clustering/spatial_clustering.ipynb`.
