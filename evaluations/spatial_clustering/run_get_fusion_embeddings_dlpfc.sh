@@ -5,7 +5,7 @@
 
 # Configuration
 CHECKPOINT="./results/spatial_clustering/st_conma/dlpfc/checkpoints"
-OUTPUT_DIR="./results/spatial_clustering/st_conma/dlpfc/fusion_embeddings_test"
+OUTPUT_DIR="./results/spatial_clustering/st_conma/dlpfc/fusion_embedding"
 
 # Model settings (must match checkpoint)
 VISION_MODEL="pathoduet"
