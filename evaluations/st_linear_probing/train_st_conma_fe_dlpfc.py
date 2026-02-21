@@ -86,7 +86,7 @@ LABEL_NAMES = list(LABEL_MAP.keys())
 # Paths
 IMAGE_DIR = "./pt_dataset/st_images"
 GENE_CSV_PATH = "./pt_dataset/st_sentences/top100_sentences.csv"
-ANNOTATION_DIR = "./ft_dataset/DLPFC/DLPFC_annotations"
+ANNOTATION_DIR = "./ft_dataset/spatial_clustering/DLPFC/DLPFC_annotations"
 CHECKPOINT_PATH = "./checkpoints/st_conma_pythia410m_12layers_3aug_clip/checkpoint_epoch_12.pt"
 
 # Model config
@@ -97,7 +97,7 @@ GENE_DIM = 1024
 PROJ_DIM = 768
 MAX_SEQ_LEN = 512
 NUM_LAYERS = 12
-DEVICE = "cuda:0"
+DEVICE = "cuda:3"
 
 # Training config
 BATCH_SIZE = 32
@@ -681,7 +681,7 @@ def main():
         print("No cached embeddings found. Extracting new embeddings...")
 
         # Load multimodal model
-        print("\nLoading Multimodal Model (ST-ConMa-text)...")
+        print("\nLoading Multimodal Model (ST-ConMa)...")
         model = MultimodalInference(
             checkpoint_path=CHECKPOINT_PATH,
             vision_model_name=VISION_MODEL_NAME,
