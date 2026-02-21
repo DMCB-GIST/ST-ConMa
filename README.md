@@ -110,20 +110,12 @@ pip install --no-deps -f https://data.pyg.org/whl/torch-2.2.0+cu121.html -r st_c
 
 ## 🚀 Dataset Preparation
 
-### 1. Download HEST-1K Dataset
+### 1. Download Pre-training and downstream datasets
 
-```bash
-conda activate hest
-python ./pt_dataset/st_download.py
-python ./pt_dataset/patches_download.py
+We have uploaded pre-training, downstream datasets and result files on Google Drive. 
+Access requests will be approved as quickly as possible.
 
-conda activate st_conma
-python ./extract_patches.py
-```
-
-### 2. Preprocessing
-conda activate st_conma
-Run all cells in `./pt_dataset/profiling_and_preprocessing.ipynb`.
+- **Link**: [https://drive.google.com/drive/folders/1l7pVZ504gm9OywC1WyznrRjfFpY7yxSF?usp=sharing]
 
 ---
 
