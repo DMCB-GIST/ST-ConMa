@@ -117,6 +117,8 @@ Access requests will be approved as quickly as possible.
 
 - **Link**: [https://drive.google.com/drive/folders/1l7pVZ504gm9OywC1WyznrRjfFpY7yxSF?usp=sharing]
 
+Histopathology benchmark datasets can be downloaded from the links mentioned previously.
+
 ---
 
 ## Pre-training
