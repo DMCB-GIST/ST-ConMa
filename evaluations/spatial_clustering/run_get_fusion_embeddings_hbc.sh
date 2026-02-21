@@ -5,7 +5,7 @@
 
 # Configuration
 CHECKPOINT="./results/spatial_clustering/st_conma/human_breast_cancer/checkpoints"
-OUTPUT_DIR="./results/spatial_clustering/st_conma/human_breast_cancer/fusion_embeddings_test"
+OUTPUT_DIR="./results/spatial_clustering/st_conma/human_breast_cancer/fusion_embeddings"
 
 # Model settings (must match checkpoint)
 VISION_MODEL="pathoduet"
@@ -55,7 +55,7 @@ python ./evaluations/spatial_clustering/get_fusion_embeddings.py \
     --max_length $MAX_LENGTH \
     --batch_size $BATCH_SIZE \
     --num_workers $NUM_WORKERS \
-    --device cuda:3 \
+    --device cuda:0 \
     --output_name $OUTPUT_NAME
 
 echo "=================================="
